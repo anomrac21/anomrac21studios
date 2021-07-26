@@ -182,7 +182,7 @@ ul{
 }
 #navbanner{
 	background-color:#00000011;
-	bottom:100px;
+	bottom:10vh;
     	text-align: center;
 	position: absolute;
         width: 100%;
@@ -219,7 +219,7 @@ ul{
     list-style-type: none;
     display: inline-block;
     position: relative;
-    padding: 5vh 2vw;
+    padding: 8vh 2vw;
     width: 14%;
     transition: background-color 0.5s;
 }
@@ -581,7 +581,7 @@ ul{
   #footer li {
     min-width: 10vw;
   }
-  #footer li h4{
+  #dock li h4, #dock li h5{
     position: absolute;
     bottom: 45px;
     text-align: center;
@@ -593,14 +593,14 @@ ul{
     display:none; 
     width: 100%;
   }
-  #footer li i{
+  #dock li i{
    font-size:20px;
    padding: 0px 3vw;
   }
-  #footer li:hover i{
+  #dock li:hover i{
     font-size:30px;
   }
-  #footer li:hover h4{
+  #footer li:hover h4,#footer li:hover h5{
     display:block;
   }
 }
