@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
 @keyframes spin {
   from {
     transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
@@ -7,10 +8,20 @@
   }
   
 }
+
+body {
+  font-family: Lato;
+}
 body, h1, h2, h3, h4, h5, p, div{
 	margin:0px;
 }
-
+#brand{
+    margin-top: 44vh;
+    padding:0 12vw;
+    position: absolute;
+    right: 0;
+    z-index:2;
+}
 ul{
     padding:0;
 }
@@ -36,7 +47,7 @@ ul{
    padding:20px;
 } 
 .flickity-viewport{
-   padding:10px 0px;
+   padding:0px;
 }
 .white{
     color:#efefef;
@@ -60,7 +71,6 @@ ul{
     border-radius: 150px;
     padding:75px 15px;
     margin:3.35vw;
-    box-shadow: 6px 6px 12px #9e9e9e;
 }
 .card{
     background: rgba(255,255,255,0.5);
@@ -85,8 +95,10 @@ ul{
 .max_300{
   width:200px; 
 }
-#brand_header, .topic_header, #front{
+#brand_header, .topic_header{ 
 	padding:5px;
+}#front{
+	padding:0px;
 }
 .main-body{
     overflow:hidden;
@@ -103,23 +115,18 @@ ul{
 #brand_header{
 	background-image: linear-gradient(#101010 , #101020, #101050, #1010a0 );
 	color:#efefef;
-	text-align:center;
+	text-align:right;
         background-attachment: fixed;
+	height:100vh;
 
 }
-#brand_header h1{
-	padding:47vh 0 53vh;
-}
+
 .topic_header{
     background-color: #1010a0;
     color: #efefef;
     font-size: 18px;
     width: 100%;
     display: inline-block;
-    box-shadow: 2px 1px 3px #10101055;
-}
-.topic_header h4 i{
-    animation: spin 7s linear infinite;
 }
 .games{
     background-image: url(junk/anomrac21studios.gif);
@@ -162,20 +169,29 @@ ul{
     list-style-type: none;
     display: inline-block;
     margin: -2px;
-    height: 70px;
-    padding: 4px;
+    height: 60px;
+    padding: 3px;
     vertical-align: top;
 }
 .icons li i{
-   font-size:40px;
+   font-size:48px;
    display: inline-block;
    position: relative;
    bottom: 0;
    transition: font-size 0.2s;
 }
+#navbanner{
+	background-color:#00000011;
+	bottom:100px;
+    	text-align: center;
+	position: absolute;
+        width: 100%;
+        transition: background-color 0.5s;
+        z-index:1;
+        
+}
 #footer{
 	background-color:#1010a0;
-	position:fixed;
 	bottom:0px;
     	text-align: center;
 	position: fixed;
@@ -183,32 +199,41 @@ ul{
         transition: background-color 0.5s;
         
 }
-#footer a {
+#footer #dock li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    padding: 5px;
+    transition: background-color 0.5s;
+}
+#dock a {
 	color:#efefef;
 	text-decoration: none;
 }
 
-#footer * {
+#footer *,
+#navbanner *{
 	margin:0px;
 }
-#footer li {
-         list-style-type: none;
-         display: inline-block;
-         position: relative;
-	 padding:5px;
-         transition: background-color 0.5s;
+#navbanner #dock li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    padding: 5vh 2vw;
+    width: 14%;
+    transition: background-color 0.5s;
 }
-#footer li h4{
+#dock li h4{
     display:inline-block;
 }
-#footer li:hover{
+#dock li:hover{
     background-color:#101010;
 }
 
-#footer li:hover i{
+#dock li:hover i{
 	font-size:20px;
 }
-#footer li i{
+#dock li i{
    font-size:0px;
    display: inline-block;
    position: relative;
@@ -216,27 +241,28 @@ ul{
    padding:3px;
    transition: font-size 0.3s;
 }
-#footer li span{
+#dock li span{
     margin:0;
 }
 
-#footer li:hover span {
+#dock li:hover span {
             color: #fefefe;
 }
 .gallery {
-  padding:30px 0;
+  padding:0;
+  margin:0;
 }
 
 .gallery-cell {
-  width: 66%;
-  height: 400px;
-  margin-right: 10px;
+  width: 100%;
+  height: 100vh;
+  margin-right: 0px;
   background-color:#eaeaea;
   text-align: center;
   background-position: center;
   background-size: 100% 100%;
   background-blend-mode: overlay;
-  box-shadow: 5px 5px 5px #afafaf;
+  
 }
 .game-gallery{
     top: -70vh;
@@ -254,17 +280,14 @@ ul{
 .gallery-cell-4{
     background-image: url(junk/portfolio.gif);
 }
-.gallery-cell-5{
-    background-image: url(junk/imagination.gif);
-    background-position: top;
-}
+
 .game-cell {
   margin-right: 10px;
   background-color:rgba(225,225,225,0.7);
   text-align: center;
   border-radius:5px;
   width:280px;
-  height:400px;
+  height:430px;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
   overflow:hidden;
   border-top: 1px solid rgba(255,255,255,0.5);
@@ -296,21 +319,22 @@ ul{
 
 .addtocart{
     background-color: #29c529;
-    padding: 8px 15px;
+    padding:10px 15px;
+    margin: 7px;
     border-radius: 5px;
     border: none;
     color: #efefef;
-    font-weight: 800;
+    transition: background-color 0.5s;
 }
 .addtocart:hover{
-	    background-color: #30c;
+	    background-color: #3300cc;
 }
 #phonecontainer{
     display: inline-block;
     text-align: center;
     width: 100%;
 }
-#android, #iphone{
+#iphone{
     border: 1px solid #8f8f8f;
     border-radius: 30px;
     overflow: hidden;
@@ -321,30 +345,22 @@ ul{
     box-shadow: 6px 6px 12px #9e9e9e;
 	
 }
-#android{
-    background-color: #bfbfbf;
-}
 #iphone{
      background-color: #ececec;
 }
-#android .app,#iphone .app{
+#iphone .app{
     padding: 30px 6px 40px;
     text-align:initial;
 }
 
-#android .app .app_body{
-    cursor: grab;
-    height: 465px;
-    overflow: auto;
-    border: 1px solid #efefef99;
-}#iphone .app .app_body{
+#iphone .app .app_body{
     height: 465px;
     background-color: #fefefe;
     overflow: scroll;
     border: 1px solid #afafaf;
 }
 
-#iphone .app .app_body::-webkit-scrollbar,#android .app .app_body::-webkit-scrollbar {
+#iphone .app .app_body ::-webkit-scrollbar,{
     display: none;
 }
 
@@ -559,9 +575,6 @@ ul{
 }
 
 @media only screen and (max-width: 930px) {
-  #brand_header h1 {
-    padding: 47vh 0 50vh;
-  }
   .consult_us{
     background-size: auto 100%;
   }
