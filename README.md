@@ -2,16 +2,11 @@
 0ne page Website for anomrac21studios Marketing
 
 
-anomrac21studios
-Are You looking to...
-
  GET A WEBSITE
 Get a static webpage, advertising your business product or service.
 Domain Names are FREE with the annual payment plan.
-$100TTD/month $1200TTD/annum
-Free Bandwidth 20GB/month
-Content changes cost +$300TTD per Request.
-Bandwith over 20GB/month (+ $100TTD per 20GB)
+
+
 
  Mobile Application Development
 Get a cross-platform Mobile Application Starting from $4500TTD
@@ -28,7 +23,6 @@ We Develop and Maintain, Scaleable Applications for Businesses and Individuals.
 Website Maintenance Package
 24-hour Crash Support
 & Security Updates
-$300/month | $3000/annum
 
 Need More Services?
 Contact Us
@@ -38,12 +32,10 @@ anomrac21@gmail.com
 Web Design & Development
 Server NOT included
 Complexity = Price
-Starting from $3500
 
 Managed Web Services
 Dedicated Developer
 Updates and Fixes
-$3500/month
 
 E-Commerce Solutions, Membership Websites, Blogs and Forums, Community and Social Media Websites, and More...
                 
@@ -73,7 +65,6 @@ You may not need a website but you may need one or more of these services.
 Photography Services
 Need High-Quality pictures taken for an event?
 We have photographers ready to take HQ pictures for any project, service, or even
-$1500
 Need More Services?
 Contact Us
 anomrac21@gmail.com
@@ -81,11 +72,9 @@ anomrac21@gmail.com
 Videography Services
 We provide Video Recording services.
 Editing for music videos, Weddings, Cultural Events, and more
-$1800
 Graphic Design Service
 Get a Logo, Page Banner, Advertisement, and more...
 Our talented graphic designers provide awesome quality graphics that can be used for promotions and more...
-$500
 Prints | Online Streaming | Audio Recording | Sound Engineering
  Play Our Games
  
@@ -96,4 +85,3 @@ Contact Us
 Email: anomrac21@gmail.com
 Phone: 1-868-706-0349
 
- GET A WEBSITE  GET A WEB APPLICATION  GET A MOBILE APPLICATION  PLAY OUR GAMES  CONSULT US  MORE SERVICES
