@@ -69,8 +69,8 @@ ul{
 .bg_blue{
     background-image: radial-gradient(#3030d0,#1010A0);
     border-radius: 150px;
-    padding:75px 15px;
-    margin:3.35vw;
+    padding:75px 30px;
+    margin:2.15vw;
 }
 .card{
     background: rgba(255,255,255,0.5);
@@ -283,17 +283,17 @@ ul{
 
 .game-cell {
   margin-right: 10px;
+  margin-bottom:10px;
   background-color:rgba(225,225,225,0.7);
   text-align: center;
   border-radius:5px;
   width:280px;
-  height:430px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+  height:380px;
   overflow:hidden;
   border-top: 1px solid rgba(255,255,255,0.5);
   border-left: 1px solid rgba(255,255,255,0.5);
   backdrop-filter: blur(6px);
-  text-shadow: 0px 0px 1px rgba(255,255,255,0.5);
+
  
 }
 .game-status{
