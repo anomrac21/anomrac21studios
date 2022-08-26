@@ -16,12 +16,29 @@ body, h1, h2, h3, h4, h5, p, div{
 	margin:0px;
 }
 #brand{
-    margin-top: 44vh;
-    padding:0 12vw;
-    position: absolute;
-    right: 0;
+    font-family:Montserrat;
+    position:absolute;
+    padding:5px 3vw;
+    top:0;
+    margin:0;
+    right:0;
     z-index:2;
-    transition: padding 0.5s;
+    transition:padding 0.5s;
+}
+.sectionheader{
+     font-family:Montserrat;
+     font-size: 50px;
+     padding:15px;
+     position: relative;
+}
+.featuredgame-cell{
+    background-image: url(junk/BrawlersGif.gif);
+    background-repeat: no-repeat;
+    margin: 25px;
+    max-width:608px;
+    max-width: 608px;
+    min-height: 300px;
+    position: relative;
 }
 ul{
     padding:0;
@@ -109,15 +126,15 @@ ul{
     margin:0 auto;
 }
 #footer {
-        font-family:monospace;
+    font-family:monospace;
 	padding:1px;
 	color:#efefef;
 }
 #brand_header{
-	background-image: linear-gradient(#101010 , #101020, #101050, #1010a0 );
+	background-image: url(junk/lines-trippy.gif);
 	color:#efefef;
 	text-align:right;
-        background-attachment: fixed;
+    background-attachment: fixed;
 	height:100vh;
 
 }
@@ -130,13 +147,10 @@ ul{
     display: inline-block;
 }
 .games{
-    background-image: url(junk/anomrac21studios.gif);
-    background-position: center;
-    background-size: 100% 100%;
-    background-blend-mode: normal;
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
+    background-color: #101010;
+    display: inline-block;
     height: 90vh;
+    width:100%;
 
 }
 .consult_us{
@@ -171,7 +185,7 @@ ul{
     display: inline-block;
     margin: -2px;
     height: 60px;
-    padding: 3px;
+    padding: 15px;
     vertical-align: top;
 }
 .icons li i{
@@ -184,11 +198,11 @@ ul{
 #navbanner{
 	background-color:#00000011;
 	bottom:10vh;
-    	text-align: center;
+    text-align: center;
 	position: absolute;
-        width: 100%;
-        transition: background-color 0.5s;
-        z-index:1;
+    width: 100%;
+    transition: background-color 0.5s;
+    z-index:1;
         
 }
 #footer{
@@ -253,33 +267,8 @@ ul{
   padding:0;
   margin:0;
 }
-
-.gallery-cell {
-  width: 100%;
-  height: 100vh;
-  margin-right: 0px;
-  background-color:#eaeaea;
-  text-align: center;
-  background-position: center;
-  background-size: 100% 100%;
-  background-blend-mode: overlay;
-  
-}
 .game-gallery{
-    top: -70vh;
     position:relative;
-}
-.gallery-cell-1{
-    background-image: url(junk/questions.gif);  
-}
-.gallery-cell-2{
-    background-image: url(junk/sellproducts.gif);
-}
-.gallery-cell-3{
-    background-image: url(junk/information.gif);
-}
-.gallery-cell-4{
-    background-image: url(junk/portfolio.gif);
 }
 
 .game-cell {
@@ -287,15 +276,11 @@ ul{
   margin-bottom:10px;
   background-color:rgba(225,225,225,0.7);
   text-align: center;
-  border-radius:5px;
-  width:280px;
-  height:380px;
+  width:240px;
+  height:360px;
   overflow:hidden;
-  border-top: 1px solid rgba(255,255,255,0.5);
-  border-left: 1px solid rgba(255,255,255,0.5);
   backdrop-filter: blur(6px);
 
- 
 }
 .game-status{
   font-size: 12px;
@@ -339,7 +324,7 @@ ul{
     border: 1px solid #8f8f8f;
     border-radius: 30px;
     overflow: hidden;
-    margin: 20px 10px;
+    margin: 70px 10px;
     display: inline-block;
     width: 285px;
     height: 545px;
