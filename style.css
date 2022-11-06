@@ -24,6 +24,7 @@ body, h1, h2, h3, h4, h5, p, div{
     right:0;
     z-index:2;
     transition:padding 0.5s;
+
 }
 .sectionheader{
      font-family:Montserrat;
@@ -115,6 +116,7 @@ ul{
 }
 #brand_header, .topic_header{ 
 	padding:5px;
+    
 }#front{
 	padding:0px;
 }
@@ -131,11 +133,15 @@ ul{
 	color:#efefef;
 }
 #brand_header{
-	background-image: url(junk/lines-trippy.gif);
-	color:#efefef;
-	text-align:right;
-    background-attachment: fixed;
-	height:100vh;
+	background-image: url(junk/hud.gif);
+    color: #efefef;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-position: top;
+    height: 100vh;
+    text-shadow: 2px 2px #000;
+    font-weight: bolder;
 
 }
 
@@ -149,7 +155,6 @@ ul{
 .games{
     background-color: #101010;
     display: inline-block;
-    height: 90vh;
     width:100%;
 
 }
@@ -178,18 +183,18 @@ ul{
     color:#1010a0;
 }
 .icons li:hover i{
-    font-size:60px;
+    font-size:55px;
 }
 .icons li {
     list-style-type: none;
     display: inline-block;
-    margin: -2px;
-    height: 60px;
+    margin: -3px;
+    height: 55px;
     padding: 15px;
     vertical-align: top;
 }
 .icons li i{
-   font-size:48px;
+   font-size:32px;
    display: inline-block;
    position: relative;
    bottom: 0;
