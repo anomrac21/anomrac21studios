@@ -24,19 +24,40 @@
 
 <div id='brand_header'>
 <div id='brand'>
+<img id="logo" src="junk/hud.gif">
 <h1 data-aos="zoom-in" data-aos-anchor="#brand_header" class="title">anomrac21studios</h1>
 </div>
 </div>
 
-
-
 <div id='web' class="front">
+<div data-aos="fade-left"
+	data-aos-offset="300"
+	data-aos-duration="500" class="full">
+<h2 class="center"><i class="fa fa-paint-brush"></i><br>Design.</h2>
+</div>
+<div data-aos="fade-right"
+	data-aos-offset="300"
+	data-aos-duration="500" class="full">
+<h2 class="center"><i class="fa fa-wrench"></i><br>Development</h2>
+</div>
+<div data-aos="fade-left"
+	data-aos-offset="300"
+	data-aos-duration="500" class="full">
+<h2 class="center"><i class="fa fa-gears"></i><br>Maintainance</h2>
+</div>
+<div data-aos="fade-up"
+	data-aos-offset="300"
+	data-aos-duration="500" class="full">
+<h2 class="center"><i class="fa fa-mobile-phone"></i> <i class="fa fa-globe"></i><br>Scaleable Web Applications</h2>
+</div>
+</div>
+
+<div id='tech' class="front">
 <div data-aos="fade-up"
 	data-aos-offset="200"
 	data-aos-duration="500" class="normal">
-<h2 class="center">Our Studio Design, Develop, and Maintain, Scaleable Web Applications for Businesses and Individuals.</h2>
-<p class="center">Technologies we work with.</p>
-
+<h3 class="center normal""><a class="button" href="tel:1-868-706-0349"><i class="fa fa-pencil-square-o"></i> Consult Us</a></h3>
+<h3 class="center normal">Technologies we work with.</h3>
 </div>
 
 <div data-aos="zoom-out-up"
@@ -74,6 +95,9 @@
 <p class="normal center" data-aos="fade-up"
 	data-aos-duration="1000">E-Commerce Solutions, Membership Websites, Blogs and Forums, Community and Social Media Websites, and More...</p>
 
+</div>
+
+<div id='projects' class="front">
 <div class="icons normal center"> 
   <ul>
     <li><h4 class="normal">Projects</h4><i class="fa fa-paint-brush"></i></li>
@@ -181,31 +205,32 @@
 <script src="vanilla-tilt.js"></script>
 <script>
   let brand = document.getElementById("brand");
+  let logo = document.getElementById("logo");
   window.addEventListener('scroll', function(){
     var value = window.scrollY;
     if(brand.style.position == "absolute"){
-      brand.style.top = value * 0.49 + 'px';
+      brand.style.top = value * 0.51 + 'px';
     }
   });
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 585 || document.documentElement.scrollTop > 585) {
+    if (document.body.scrollTop > 605 || document.documentElement.scrollTop > 605) {
       brand.style.fontSize = "0.66em";
       brand.style.position = "fixed";
       brand.style.top = "0";
       brand.style.margin= "0";
       brand.style.padding = "5px 3vw";
-      brand.style.background = "url(junk/lines-trippy.gif)";
-     
+      brand.style.background = "#000";
+      logo.style.display = "block";
 
     } else {
       brand.style.fontSize = "1em";
       brand.style.position = "absolute";
       brand.style.margin= "44vh 0 0 0";
       brand.style.padding = "0 12vw";
-	  brand.style.width= "100%";
       brand.style.background = "none";
+      logo.style.display = "none";
     }
   }
   AOS.init();
