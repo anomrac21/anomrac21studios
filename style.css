@@ -53,6 +53,29 @@ body, h1, h2, h3, h4, h5, p, div{
     float: left;
     margin: 0 0 0 20px;
 }
+.design{
+    background-image: url(junk/cautics.gif);
+    background-blend-mode: soft-light;
+}
+.development{
+    background-image: url(junk/graph.gif); 
+    background-blend-mode: soft-light;
+    background-size: auto 100%;
+    background-position: center;
+}
+    
+.maintainance{
+    background-image: url(junk/gears.gif);
+    background-blend-mode: soft-light;
+    background-size: 100% auto;
+    background-position: center;
+}
+.webapps{
+    background-image: url(junk/desk.gif);
+    background-blend-mode: lighten;
+    background-size: 100% auto;
+    background-position: center;
+} 
 .button{
     padding: 1.125rem 1.6875rem;
     color: #fff;
@@ -104,7 +127,7 @@ ul{
 .full{
     padding: 15vw 10vw;
     background-color: aliceblue;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 .normal{
    padding:20px ;
