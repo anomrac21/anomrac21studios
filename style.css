@@ -10,36 +10,36 @@
 }
 @keyframes pan-image {
   0% {
-    background-position: 5% 5%;
-    background-size:220%
+    background-position: 15% 5%;
+    background-size:500%
   }
   25% {
-    background-position: 12% 15%;
-    background-size:240%
+    background-position: 18% 15%;
+    background-size:510%
   }
   25.0001% {
-    background-position: 100% 85%;
-    background-size:220%
+    background-position: 100% 94%;
+    background-size:500%
   }
   50% {
-    background-position: 90% 80%;
-    background-size:250%
+    background-position: 90% 85%;
+    background-size:510%
   }
   50.0001% {
-    background-position: 85% 15%;
-    background-size:260%
+    background-position: 80% 15%;
+    background-size:500%
   }
   75% {
-    background-position: 100% 8%;
-    background-size:200%
+    background-position: 94% 8%;
+    background-size:510%
   }
   75.0001% {
-    background-position: 2% 75%;
-    background-size:220%
+    background-position: 35% 94%;
+    background-size:510%
   }
   100% {
-    background-position: 12% 75%;
-    background-size:240%
+    background-position: 24% 87%;
+    background-size:520%
   }
   
 }
@@ -172,7 +172,7 @@ body, h1, h2, h3, h4, h5, p, div{
   background-color: black;
   color: white;
   padding: 40px 10px 10px;
-}
+}0
 #tech .button{
   border: solid #fff;
 }
@@ -444,7 +444,7 @@ ul{
   overflow:hidden;
   backdrop-filter: blur(6px);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto 100%;
 
 }
 .game-cell h2{
@@ -453,6 +453,7 @@ ul{
 .game-status{
   font-size: 12px;
   position: absolute;
+  padding: 0 1rem;
   bottom: 0;
   width: 100%;
   background-color: #afaf1077;
@@ -756,6 +757,7 @@ ul{
     display:none; 
     width: 100%;
   }
+ 
   #dock li i{
    font-size:20px;
    padding: 0px 3vw;
@@ -767,3 +769,132 @@ ul{
     display:block;
   }
 }
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { 
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .game-cell{
+    background-size:  150% auto;
+ }
+ @keyframes pan-image {
+  0% {
+    background-position: 5% 5%;
+    background-size:300%
+  }
+  25% {
+    background-position: 12% 15%;
+    background-size:310%
+  }
+  25.0001% {
+    background-position: 100% 85%;
+    background-size:300%
+  }
+  50% {
+    background-position: 90% 80%;
+    background-size:310%
+  }
+  50.0001% {
+    background-position: 85% 15%;
+    background-size:300%
+  }
+  75% {
+    background-position: 100% 8%;
+    background-size:310%
+  }
+  75.0001% {
+    background-position: 22% 79%;
+    background-size:300%
+  }
+  100% {
+    background-position: 12% 84%;
+    background-size:310%
+  }
+  
+}
+}
+@media (min-width:841px)  { 
+  .game-cell{
+    background-size: 110% auto;
+ }
+ @keyframes pan-image {
+  0% {
+    background-position: 5% 5%;
+    background-size:220%
+  }
+  25% {
+    background-position: 12% 15%;
+    background-size:240%
+  }
+  25.0001% {
+    background-position: 100% 85%;
+    background-size:220%
+  }
+  50% {
+    background-position: 90% 80%;
+    background-size:250%
+  }
+  50.0001% {
+    background-position: 85% 15%;
+    background-size:260%
+  }
+  75% {
+    background-position: 100% 8%;
+    background-size:200%
+  }
+  75.0001% {
+    background-position: 2% 75%;
+    background-size:220%
+  }
+  100% {
+    background-position: 12% 75%;
+    background-size:240%
+  }
+  
+}
+}
+@media (min-width:961px)  { 
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  #logo{
+    margin: 0 0 0 50px;
+  }
+  .full{
+    padding:15vh 10vw;
+  }
+  .consult_us{
+    background-size: auto 100%;
+  }
+  #projects ul li{
+    float: left;
+  }
+  #footer li {
+    min-width: 10vw;
+  }
+  #dock li h4, #dock li h5{
+    position: absolute;
+    bottom: 45px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    left: -5;
+    font-size: 11px;
+    background-color: #101010; 
+    display:none; 
+    width: 100%;
+  }
+ 
+  #dock li i{
+   font-size:20px;
+   padding: 0px 3vw;
+  }
+  #dock li:hover i{
+    font-size:30px;
+  }
+  #footer li:hover h4,#footer li:hover h5{
+    display:block;
+  }
+  .game-cell{
+    background-size: 100% auto;
+ }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
