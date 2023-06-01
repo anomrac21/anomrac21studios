@@ -58,13 +58,14 @@ body, h1, h2, h3, h4, h5, p, div{
     margin:0 auto;
 }
 #brand_header{
+  background-attachment: fixed;
     background-image: url(junk/tonconcept.png);
     color: #efefef;
     text-align: right;
     background-repeat: no-repeat;
     background-color: #000;
     background-position: top;
-    height: 100vh;
+    height: 115vh;
     text-shadow: 3px 3px #000;
     font-weight: bolder;
     animation: pan-image 30s linear infinite;
@@ -81,7 +82,108 @@ body, h1, h2, h3, h4, h5, p, div{
     transition:padding 0.5s;
     width:100%;
     overflow:hidden;
+    
+}
+#brand h3{
+  max-width: 100vw;
+  padding-left: 60px;
+  margin: 0.3em;
+}
+#brand .brandname{
+  margin: 0.3em;
+}
+#brand .brandname:hover{
+  font-size: 0.8em;
+  margin: 0.3em;
+}
+#brand a{
+    color: #efefef;
+    margin: 0.3em;
+    font-size: 0.8em;
+    text-decoration: none;
+    transition: 0.25s;
+}#brand a:hover{
+  font-size: 0.9em;
+  margin: 0.2em;
+}
+#toolsanchor{
+  display: block;
+  position: relative;
+  top: -40px;
+  visibility: hidden;
+}
+#quickmenutools{
+  background-image: linear-gradient(0deg,#000,#000,#000,#efefef44,#000,#000, #000);
+  color: #efefef;
 
+}
+#quickmenutools .afflinkqmt{
+  width: 25vw;
+  min-width: 256px;
+  min-height: 26vh;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 4px 4px #efefef44;
+  border-left: 1px solid #efefef88;
+  border-top: 1px solid #efefef88;
+  border-right: 1px solid #efefefff;
+  border-bottom: 1px solid #efefefff;
+  border-radius: 0.165rem;
+  background-image: url(junk/cautics.gif);
+  background-attachment: fixed;
+  color: #efefef;
+  background-color: #000;
+  background-blend-mode: hard-light;
+}
+#quickmenutools .flickity-prev-next-button{
+  top: 50%;
+  width: 24px;
+  height: 100%;
+  border-radius: 0;
+  display: none;
+
+}
+#quickmenutools .flickity-prev-next-button.next{ right: 0;}
+#quickmenutools .flickity-prev-next-button.previous{left: 0;}
+#quickmenutools .flickity-page-dots .dot{margin: 0 2px;}
+#quickmenutools a{
+  color: #efefef;
+}
+#uigrad{
+  background-color: #000;
+}
+.gradientUI{
+  background-image: linear-gradient(90deg,transparent, #efefef, transparent);
+  height: 1px;
+  width: 33%;
+  margin: 0 auto;
+}
+#about{
+    
+    background-attachment: fixed;
+    color: #efefef;
+    background-color: #000;
+    background-blend-mode: hard-light;
+}
+#devdesinfo{
+  height: 90vh;
+  padding: 10vh 5vw 0;
+  background-position: -33vw;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-image: url(junk/hud.gif);
+  background-blend-mode: hard-light;
+}
+
+#devdesinfo h1{
+  font-size: 2.9em;
+    padding-bottom: 10px;
+}
+#devdesinfo h2,#devdesinfo p{
+  font-size: 1.4em;
+    padding: 0;
+    padding-bottom: 10px;
+    max-width: 50vw;
 }
 #logo{
     position:absolute;
@@ -95,6 +197,7 @@ body, h1, h2, h3, h4, h5, p, div{
 }
 #projects ul li{
   display: block;
+  padding: 10px;
 }
 #projects ul li h4{
   display: inline-flex;
@@ -155,30 +258,73 @@ body, h1, h2, h3, h4, h5, p, div{
 .button{
     padding: 1.125rem 1.6875rem;
     margin: 0 1rem;
-    color: #fff;
+    color: #efefef;
     background-color: #000;
     font-weight: 600;
     border-radius: 0.1875rem;
     transition-duration: 0.35s;
     transition-timing-function: ease-out;
+    border-left: 1px solid #efefef88;
+    border-top: 1px solid #efefef88;
+    border-right: 1px solid #efefefff;
+    border-bottom: 1px solid #efefefff;
 }
 .button:hover{
     padding: 1.125rem 2.6875rem;
     margin: 0;
     color: #000;
-    background-color: #fff;   
+    background-color: #efefef;   
 }
-#tech, #projects{
+#tech, #projects, #subscriptions{
   background-color: black;
-  color: white;
+  color: #efefef;
   padding: 40px 10px 10px;
-}0
-#tech .button{
-  border: solid #fff;
 }
 
 #mobile{
   background-image: linear-gradient(180deg, black, black,transparent);
+}
+#subscriptions ul{
+  list-style: none;
+  max-width: 100%;
+}
+#subscriptions .package{
+  background-color: #57575744;
+  margin: 10px 10px 100px;
+  position: relative;
+  padding: 10px;
+  max-width: 100%;
+  min-width: 240px;
+}
+#subscriptions ul ul{
+  list-style: inside;
+  display: initial;
+  width: fit-content;
+  margin: 0 auto;
+}
+#subscriptions ul ul li{
+  background: none;
+    margin: 0;
+    padding: 5px;
+    font-weight: 600;
+}
+#subscriptions h2{
+  width:100%;
+  margin-bottom: 10px;
+}
+#subscriptions .afflink{
+  color:#efefef;
+}
+#subscriptions p{
+  display: inline-grid;
+  max-width: 240px;
+}
+#subscriptions .button{
+  margin: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
 }
 .sectionheader{
      font-family:Montserrat;
@@ -221,7 +367,7 @@ ul{
   height:600px;
   width:100%;
   padding-top:10vh ;
-  background:  black;
+  background-image: linear-gradient(180deg, black, black,transparent);
 }
 .normal{
    padding:20px ;
@@ -253,7 +399,7 @@ ul{
     margin:2.15vw;
 }
 .card{
-    background: rgba(255,255,255,0.5);
+    background: #efefefaa;
     border: 1px solid rgba(14, 13, 13, 0.7);
     overflow: hidden;
 }
@@ -262,8 +408,6 @@ ul{
   width: 100%;
 }
 .cardeffect:nth-child(1){
-  
- 
 }
 .cardeffect:nth-child(2){
  
@@ -279,23 +423,17 @@ ul{
 }
 .cardeffect:nth-child(5){
 }
-#servicesfront {    
-  background-image: linear-gradient(#101010,#101010,#922898,#101010,#101010);
-  min-height: 90vh;
-  overflow: hidden;	
-}
+
 .max_300{
   width:200px; 
 }
 #brand_header, .topic_header{ 
 	padding:5px;
     
-}#front{
-	padding:0px;
 }
 
 #footer {
-    font-family:monospace;
+  font-family:monospace;
 	padding:1px;
 	color:#efefef;
 }
@@ -312,6 +450,7 @@ ul{
     background-color: #000000;
     display: inline-block;
     width:100%;
+    padding-top:50px;
 
 }
 .consult_us{
@@ -371,7 +510,6 @@ ul{
 	background-color:#1010a0;
 	bottom:0px;
     	text-align: center;
-	position: fixed;
         width: 100%;
         transition: background-color 0.5s;
         
@@ -400,31 +538,6 @@ ul{
     width: 14%;
     transition: background-color 0.5s;
 }
-#dock li h4{
-    display:inline-block;
-}
-#dock li:hover{
-    background-color:#101010;
-}
-
-#dock li:hover i{
-	font-size:20px;
-}
-#dock li i{
-   font-size:0px;
-   display: inline-block;
-   position: relative;
-   bottom: 0;
-   padding:3px;
-   transition: font-size 0.3s;
-}
-#dock li span{
-    margin:0;
-}
-
-#dock li:hover span {
-            color: #fefefe;
-}
 .gallery {
   padding:0;
   margin:0;
@@ -439,12 +552,14 @@ ul{
   background-color:rgba(225,225,225,0.7);
   text-shadow: 2px 2px #000000;
   text-align: initial;
-  width:98vw;
+  width:96vw;
   height:90vh;
   overflow:hidden;
   backdrop-filter: blur(6px);
   background-repeat: no-repeat;
   background-size: auto 100%;
+  border: 1px solid #efefef88;
+  border-radius: 0.165rem;
 
 }
 .game-cell h2{
@@ -470,21 +585,9 @@ ul{
   text-align: center;
   line-height: 300px;
   font-size: 80px;
-  color: white;
+  color: #efefef;
 }
 
-.addtocart{
-    background-color: #29c529;
-    padding:10px 15px;
-    margin: 7px;
-    border-radius: 5px;
-    border: none;
-    color: #efefef;
-    transition: background-color 0.5s;
-}
-.addtocart:hover{
-	    background-color: #3300cc;
-}
 #phonecontainer{
     display: inline-block;
     text-align: center;
@@ -515,7 +618,7 @@ ul{
     overflow: hidden;
 }
 
-#iphone .app .app_body ::-webkit-scrollbar,{
+#iphone .app .app_body ::-webkit-scrollbar{
     display: none;
 }
 
@@ -525,254 +628,34 @@ ul{
   max-width: 480px;
   margin: auto;
   background-color: #555;
-  color: white;
+  color: #efefef;
   padding-bottom: 20px;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  width: 271px;
-}
-
-.topnav #myLinks {
-  display: none;
-}
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 20px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.bodynav .ele_head{
-    background-color: #4caf50;
-    padding: 2px;
-    display: inline-block;
-    width: 181px;
-}
-.bodynav h3{
-  padding: 50px 5px 5px;
-  background-color: #202020;
-}
-.bodynav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.bodynav .a_phone_element{
-    padding: 10px;
-    margin: 5px;
-    background-color: #202020;
-    border-radius: 5px;
-    transition: background-color 0.4s;
-    color:#efefef;
-
-    
-}
-.bodynav .a_phone_element h4 {
-   color:#efefef;
-}
-.bodynav .a_phone_element p {
-   display: flex;
-}
-.bodynav .a_phone_element:hover{
-    background-color: #efefef;
-    color:#202020;
-
-}
-.bodynav .app_image{
-    max-height:48px;
-    max-width:48px;
-    float:left;
-    margin: 0 2px 2px 0;
-}
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-
-
-
-:root {
-  --box-height: 40px;
-  --border-radius: 5px;
-  --space-between: 20px;
-  --font-size: 16px;
-
-  --color-0: #ffffff;
-  --color-1: #dcdcdd;
-  --color-2: #c5c3c6;
-  --color-3: #212529;
-  --color-4: #659b5e;
-  --color-5: #ce4257;
-}
-
-
-
-#survey-container {
-    margin: 5px auto;
-    padding: 9;
-    border-radius: calc(3 * var(--border-radius));
-}
-
-#title {
-  margin: 30px 0;
-  text-align: center;
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 50px;
-  text-transform: capitalize;
-  color: var(--color-3);
-}
-
-#description {
-  margin: 30px 0;
-  padding: 5px;
-  text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: var(--color-3);
-}
-
-#survey-form {
-  padding: 30px;
-  padding-top: 20px;
-  background: var(--color-1);
-  opacity: 98%;
-  border: none;
-  border-radius: calc(2 * var(--border-radius));
-}
-
-#survey-form * {
-  font-size: var(--font-size);
-}
-
-.row-label,
-.row-input {
-  margin: 0;
-  width: 100%;
-  display: block;
-}
-.row-input {
-  height: var(--box-height);
-  padding: 5px 10px;
-}
-.row-label {
-  color: var(--color-3);
-  font-weight: 600;
-  height:20px;
-  padding: 0px;
-}
-
-.row-label:not(:first-child) {
-  margin-top: var(--space-between);
-}
-
-.row-input:not(.small) {
-  background: white;
-  border: none;
-  border-radius: var(--border-radius);
-}
-
-.inline-label {
-  margin-left: 10px;
-  font-size: 14px;
-  color: var(--color-3);
-}
-
-.small {
-  height: calc(var(--box-height) * 0.75);
-}
-
-#comments {
-  padding: 10px;
-  margin: 0;1:08 AM 2/26/2021
-  height: 120px;
-  width: 100%;
-  background: white;
-  border: none;
-  border-radius: var(--border-radius);
-  resize: none;
-}
-
-#submit {
-  margin-top: calc(2 * var(--space-between));
-  height: var(--box-height);
-  width: 100%;
-  background: var(--color-4);
-  border: none;
-  border-radius: var(--border-radius);
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-#submit:hover {
-  box-shadow: 0 0 2px var(--color-3);
-}
-
-@media (min-width: 43.75rem){
-  #logo{
-    margin: 0 0 0 50px;
-  }
-  .full{
-    padding:15vh 10vw;
-  }
-  .consult_us{
-    background-size: auto 100%;
-  }
-  #projects ul li{
-    float: left;
-  }
-  #footer li {
-    min-width: 10vw;
-  }
-  #dock li h4, #dock li h5{
-    position: absolute;
-    bottom: 45px;
-    text-align: center;
-    padding: 5px;
-    margin: 0;
-    left: -5;
-    font-size: 11px;
-    background-color: #101010; 
-    display:none; 
-    width: 100%;
-  }
- 
-  #dock li i{
-   font-size:20px;
-   padding: 0px 3vw;
-  }
-  #dock li:hover i{
-    font-size:30px;
-  }
-  #footer li:hover h4,#footer li:hover h5{
-    display:block;
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+  #devdesinfo{
+    height: 80vh;
+    background-position: 5vw;
   }
 }
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  #brand h3{
+    padding-left: 130px;
+  } 
+}
 @media (min-width:641px)  { 
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  #subscriptions ul{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  #devdesinfo{
+    height: 100vh;
+    background-position: 20vw;
+  }
+
   .game-cell{
     background-size:  150% auto;
  }
@@ -816,6 +699,20 @@ ul{
   .game-cell{
     background-size: 110% auto;
  }
+ #devdesinfo{
+  padding: 10vh 5vw 0;
+  background-position: 40vw;
+  height: 80vh;
+ }
+ #subscriptions ul{
+  display: flex;
+ }
+ #about h1 {
+  max-width: 50vw;
+}
+ #subscriptions p{
+  max-width: 200px;
+}
  @keyframes pan-image {
   0% {
     background-position: 5% 5%;
@@ -869,32 +766,21 @@ ul{
   #footer li {
     min-width: 10vw;
   }
-  #dock li h4, #dock li h5{
-    position: absolute;
-    bottom: 45px;
-    text-align: center;
-    padding: 5px;
-    margin: 0;
-    left: -5;
-    font-size: 11px;
-    background-color: #101010; 
-    display:none; 
-    width: 100%;
-  }
- 
-  #dock li i{
-   font-size:20px;
-   padding: 0px 3vw;
-  }
-  #dock li:hover i{
-    font-size:30px;
-  }
+
   #footer li:hover h4,#footer li:hover h5{
     display:block;
   }
   .game-cell{
     background-size: 100% auto;
  }
+ 
 }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+  #devdesinfo{
+    padding: 10vw;
+    background-position: 43vw;
+    height: 50vh;
+   }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+}
