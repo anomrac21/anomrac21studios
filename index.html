@@ -16,6 +16,11 @@
 
 <script defer src="https://widget.tochat.be/bundle.js?key=6049c9b7-4d28-4b7e-b9bc-592d63583731"></script>
 
+
+<script defer src="paypalmodule.js"></script>   
+
+<script src="https://www.paypal.com/sdk/js?client-id=AVcZ-GQitUBdg4Bzbh3KsGAPmV6eRjSHm5nh00YbX4wpXB_HXN0iNA_oSGYigTdujZGdbvowP0aMJZ9e&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+
 </head>
 
 <body>
@@ -83,11 +88,11 @@
   <div id="uigrad"><div class="gradientUI"></div></div>
   <div id="devdesinfo" >
     <div>
-      <h1 data-aos="zoom-out-left" data-aos-offset="0">Design & Development of Digital Assets & Websites. </h1>
+      <h1 data-aos="zoom-out-left" data-aos-offset="0">Design & Development of Digital Assets & Websites.</h1>
       <h2 data-aos="zoom-out-left" data-aos-offset="0">Creating a Digital Presence that Stands Out</h2>
-      <p data-aos="zoom-out-left" data-aos-offset="0">Our team of experienced designers will work with you to create a website that is not only visually stunning but also optimized for performance and user experience.</p>
+      <p data-aos="zoom-out-left" data-aos-offset="0">Our team will work with you to design & develop a digital asset that is not only visually stunning but also optimized for performance and user experience.</p>
         <br><br><br>
-        <a data-aos="zoom-out-left" data-aos-offset="0" class="button" href="tel:1-868-706-0349">Start Building Your Digital Asset Today</a>
+      <div data-aos="zoom-out-left" data-aos-offset="0"> <a class="button" href="#subscriptions">Start Building Your Digital Asset Today</a></div>
     </div>
   </div>
 </div>
@@ -106,8 +111,9 @@
         <p>Collaborate with our team of experts on a single design project, including project maintenance, single page websites, social media posts, digital menus, eBooks, call cards, and more.
         <br><br><br>
         </p>
-        
-      <a class="button" href="tel:1-868-706-0349">Subscribe</a>
+        <div id="paypal-button-container-P-48U97762R8404045XMR7FJJI" class="paypalbutton"></div>
+
+      <!--a class="button" href="tel:1-868-706-0349">Subscribe</a-->
     </li>
     <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="100" class="package">
       <h2>Strictly Design<br>
@@ -122,8 +128,8 @@
         <p> Collaborate with our team of experts on a wide range of design projects, including project maintenance, single page websites, social media posts, digital menus, eBooks, call cards, and more.
         <br><br><br>
         </p>
-        
-      <a class="button" href="tel:1-868-706-0349">Subscribe</a>
+        <div id="paypal-button-container-P-74220598K48928709MRZ5IHI" class="paypalbutton"></div>
+
   
     </li>
     <li data-aos="zoom-out-left" data-aos-offset="0"	data-aos-delay="150" class="package">
@@ -143,7 +149,10 @@
           <br><br><br>
         </p>
         
-      <a class="button" href="tel:1-868-706-0349">Subscribe</a>
+        <!-- Set up a container element for the button -->
+        <div id="paypal-button-container-P-0T559554F2210944KMRZ6CTQ" class="paypalbutton"></div>
+
+      <!--a class="button" href="tel:1-868-706-0349">Subscribe</a-->
       
     </li>
   </ul>
@@ -153,11 +162,11 @@
   <div><h2 class="normal">Projects</h2><i class="fa fa-paint-brush"></i></div>
     
   <ul class="normal">
-    <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="300"><h4 class=""><a class="button" href="https://www.hog868.com/" target="_blank">Hall of Games</a></h4></li>
-    <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="350"><h4 class=""><a class="button" href="https://anomrac21.itch.io/brawlers" target="_blank">Brawlers</a></h4></li>
-    <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="400"><h4 class=""><a class="button" href="https://lafamiliadecarmonayamigos-parang.netlify.app/" target="_blank">La Familia de Carmona y Amigos</a></h4></li>
+    <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="300"><h4 class=""><a class="button prjbtn hog" href="https://www.hog868.com/" target="_blank">Hall of Games</a></h4></li>
+    <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="350"><h4 class=""><a class="button " href="https://anomrac21.itch.io/brawlers" target="_blank">Brawlers</a></h4></li>
+    <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="400"><h4 class=""><a class="button prjbtn lfdcya" href="https://lafamiliadecarmonayamigos-parang.netlify.app/" target="_blank">La Familia de Carmona y Amigos</a></h4></li>
     <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="450"><h4 class=""><a class="button" href="https://anomrac21.itch.io/bhm" target="_blank">Tactical Bullet Hell Shooter</a></h4></li>
-    <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="500"><h4 class=""><a class="button" href="https://anomrac21.itch.io/flyspace" target="_blank">FlySpace</a></h4></li>
+    <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="500"><h4 class=""><a class="button flyspace" href="https://anomrac21.itch.io/flyspace" target="_blank"><p class="fly">Fly</p><p class="space">Space</p></a></h4></li>
     <li data-aos="zoom-out" data-aos-offset="0"	data-aos-delay="550"><h4 class=""><a class="button" href="https://anomrac21.itch.io/ton" target="_blank">Trials of Ninja</a></h4></li>
 
   </ul>
@@ -167,45 +176,44 @@
 <div class="game-gallery js-flickity"
 data-flickity='{ "selectedAttraction": 0.2,"friction": 0.9,"wrapAround": true, "autoPlay": 4000 }'>
 
-<a href="https://anomrac21.itch.io/brawlers" class="game-cell brawlers" target="_blank">
-  <div class="normal" data-aos="zoom-in" data-aos-offset="0" style="color: rgb(255, 136, 0);"><h2>BRAWLERS</h2></div>
-  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" style="color: rgb(255, 255, 255);">
-    A fighting game where you can customise your moves.<br>
-    Defeat your ememies and gain thier skills.
+<a href="https://anomrac21.itch.io/brawlers" class="game-cell" id="brawlers" target="_blank">
+  <div class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#brawlers" style="color: rgb(255, 136, 0);"><h2>BRAWLERS</h2></div>
+  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#brawlers" style="color: rgb(255, 255, 255);">
+    Choose your character's moves, appearance, win animations, and hit effects. With a wide range of customization options, you can create a truly unique character that reflects your style and personality. Brawlers also features exciting, fast-paced combat against a variety of enemy characters, each with their own strengths and weaknesses.
   </h4>
-  <h4 class="game-platform" style="color: rgb(255, 255, 255);"><i class="normal fa fa-windows"></i><i class="normal fa fa-android"></i></h4>
-  <p  class="game-status">In Development</p>
+  <div class="normal game-platforms"><img src="junk/itchio.png"></div>
 </a>
 
-<a href="https://anomrac21.itch.io/bhm" class="game-cell tbhs" target="_blank">
-  <div class="normal" data-aos="zoom-in" data-aos-offset="0"  style="color: rgb(255, 255, 255);"><h2>Tactical Bullet Hell Shooter</h2></div>
-  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" style="color: rgb(255, 255, 255);">Top down tactical shooter</h4>
-  <h4 class="normal game-platform" style="color: rgb(255, 255, 255);"><i class="fa fa-windows"></i></h4>
-  <p  class="game-status">Development Currently on Hold</p>
+<a href="https://anomrac21.itch.io/bhm" class="game-cell" id="tbhs" target="_blank">
+  <div class="normal" data-aos="zoom-in" data-aos-offset="0"  data-aos-anchor="#tbhs" style="color: rgb(255, 255, 255);"><h2>Tactical Bullet Hell Shooter</h2></div>
+  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#tbhs" style="color: rgb(255, 255, 255);">
+    A top-down tactical bullet hell shooter. Immerse yourself in a chaotic world where enemies relentlessly rain down bullets on you. But don't let that stop you from fighting your way through the madness. Utilize a variety of items to aid you in battle and break through enemy lines.</h4>
+    <div class="normal game-platforms"><img src="junk/itchio.png"></div>
 </a>
 
-<a href="https://anomrac21.itch.io/saving-roboio" class="game-cell roboio" target="_blank">
-  <div class="normal" data-aos="zoom-in" data-aos-offset="0" style="color: rgb(255, 255, 255);"><h2>Saving Robo.io</h2></div>
-  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" style="color: rgb(255, 255, 255);">A robot trapped robot tries to escape before his battery drains.</h4>
-  <h4 class="normal game-platform" style="color: rgb(255, 255, 255);"><i class="fa fa-windows"></i></h4>
+<a href="https://anomrac21.itch.io/saving-roboio" class="game-cell" id="roboio" target="_blank">
+  <div class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#roboio" style="color: rgb(255, 255, 255);"><h2>Saving Robo.io</h2></div>
+  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#roboio" style="color: rgb(255, 255, 255);">
+    You are tasked with keeping a beloved robot powered and alive. With a full charge and no charging port in sight, it's up to you to guide Robo.io through a series of obstacles and challenges. Charge up other bots along the way and use them to solve environmental puzzles to progress.</h4>
+    <div class="normal game-platforms"><img src="junk/itchio.png"></div>
+  </a>
+
+<a href="https://anomrac21.itch.io/ton" class="game-cell trialsofninja" id="trialsofninja" target="_blank">
+  <div class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#trialsofninja"><h2 style="color: rgb(255, 255, 255);">Trials of Ninja</h2></div>
+  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#trialsofninja" style="color: rgb(255, 255, 255);">
+    Embark on a thrilling journey in Trials of Ninja, a platformer game about a skilled ninja's quest to escape a mysterious world filled with obstacles. With quick reflexes and precision, navigate through a variety of challenging levels as you use your ninja abilities to overcome obstacles. 
+  </h4>
+    <div class="normal game-platforms"><img src="junk/itchio.png"></div>
 </a>
 
-<a href="https://anomrac21.itch.io/ton" class="game-cell trialsofninja" target="_blank">
-  <div class="normal" data-aos="zoom-in" data-aos-offset="0" ><h2 style="color: rgb(255, 255, 255);">Trials of Ninja</h2></div>
-  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" style="color: rgb(255, 255, 255);">Complete the Trails of Ninja to receive its prize.</h4>
-  <h4 class="normal game-platform" style="color: rgb(255, 255, 255);"><i class="fa fa-windows"></i></h4>
-  <p  class="game-status">Development Currently on Hold</p>
-</a>
-
-<a href="https://anomrac21.itch.io/flyspace" class="game-cell flyspace" target="_blank">
-  <div class="normal" data-aos="zoom-in" data-aos-offset="0" ><h2>Fly</h2><h2 style="color: blue;">Space</h2></div>
-  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" style="color: rgb(255, 255, 255);">
+<!--a href="https://anomrac21.itch.io/flyspace" class="game-cell" id="flyspace" target="_blank">
+  <div class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#flyspace" ><h2 style="color: rgb(255, 255, 0);">Fly</h2><h2 style="color: blue;">Space</h2></div>
+  <h4 class="normal" data-aos="zoom-in" data-aos-offset="0" data-aos-anchor="#flyspace" style="color: rgb(255, 255, 255);">
     You work for the #1 space exploration company and shape a Universe.<br>
     Expand your influence. FlySpace concept is city building with real time space combat.<br> 
   </h4>
-  <h4 class="normal game-platform"  style="color: rgb(255, 255, 255);"><i class="fa fa-windows"></i></h4>
-  <p  class="game-status" style="color: rgb(0, 0, 0);">Development Currently on Hold</p>
-</a>
+  
+</a-->
 
 </div>
 
@@ -214,33 +222,33 @@ data-flickity='{ "selectedAttraction": 0.2,"friction": 0.9,"wrapAround": true, "
   <div data-aos="fade-up"
 	data-aos-offset="0"
 	data-aos-duration="500" class="normal">
-<h3 class="center normal""><a class="button" href="tel:1-868-706-0349"><i class="fa fa-pencil-square-o"></i> Consult Us</a></h3>
+<h3 class="center normal""><a class="button" href="tel:1-868-706-0349" style="margin:0 auto;"><i class="fa fa-pencil-square-o"></i> Consult Us</a></h3>
 </div>
 <p class="normal center" data-aos="fade-up" data-aos-offset="0"
 	data-aos-duration="500">E-Commerce Solutions, Membership Websites, Blogs and Forums, Community and Social Media Websites, and More...</p>
 
 </div> 
-<div id='tech' class="front">
+<div id='tech' class="front addemmargin">
 
   <div class="icons center"> 
     <ul>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="500"><i class="fa fa-drupal"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="550"><i class="fa fa-wordpress"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="600"><i class="fa fa-paypal"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="650"><i class="fa fa-amazon"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="700"><i class="fa fa-steam"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="750"><i class="fa fa-windows"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="800"><i class="fa fa-git"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="850"><i class="fa fa-github-alt"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="900"><i class="fa fa-apple"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="950"><i class="fa fa-android"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="1000"><i class="fa fa-google"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="1050"><i class="fa fa-chrome"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="1100"><i class="fa fa-edge"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="1150"><i class="fa fa-firefox"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="1200"><i class="fa fa-opera"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="1250"><i class="fa fa-html5"></i></li>
-      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-duration="1300"><i class="fa fa-css3"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="100"><i class="fa fa-drupal"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="150"><i class="fa fa-wordpress"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="200"><i class="fa fa-paypal"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="250"><i class="fa fa-amazon"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="300"><i class="fa fa-steam"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="350"><i class="fa fa-windows"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="400"><i class="fa fa-git"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="450"><i class="fa fa-github-alt"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="500"><i class="fa fa-apple"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="550"><i class="fa fa-android"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="600"><i class="fa fa-google"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="650"><i class="fa fa-chrome"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="700"><i class="fa fa-edge"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="750"><i class="fa fa-firefox"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="800"><i class="fa fa-opera"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="850"><i class="fa fa-html5"></i></li>
+      <li data-aos="zoom-out-down" data-aos-offset="0"	data-aos-delay="900"><i class="fa fa-css3"></i></li>
       <br>
       <li><h4>Magento</h4></li>
       <li><h4>Flutter</h4></li>
@@ -253,32 +261,18 @@ data-flickity='{ "selectedAttraction": 0.2,"friction": 0.9,"wrapAround": true, "
   </div>
   
   </div>
+  <div class="emaillistcontainer" >
   <iframe class="emaillist" src="https://docs.google.com/forms/d/e/1FAIpQLScaD8r-trvmGCLsbqu7VRFZr3zHqKN51Q7r0ANAaLx3Sv6h0Q/viewform?embedded=true" width="640" height="427" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-<!--div id='mobile' class="front">
-<div id="phonecontainer">
-
-  <div id="iphone" data-aos="zoom-out-up"
-	data-aos-duration="500" data-tilt="0.1" data-tilt-glare data-tilt-max-glare="0.3">
-    <div class="app">
-	<div class="app_body">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegxg_UD7RMupo5YtJJpNOF-uxNHd6vPqnmHFMnXA2aetS0cA/viewform?embedded=true" width="271" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading�</iframe>
-    </div>
-    </div>
   </div>
-</div>
-
-<h2 class="normal_txt center">Cross-platform Mobile Applications</h2>
-
-<h4 class="center">We develop mobile applications for both Android and iOS.</h4>
-
-<h2 class="center normal_txt">Google <i class="fa fa-android"></i> | <i class="fa fa-apple"></i> iOS</h2>
-</div-->
 
 
 
-<div id="" class="front">
-<h4 class="normal_txt">Contact Us<br>Email: anomrac21@gmail.com<br><a href="tel:1-868-706-0349"><i class="fa fa-whatsapp"></i>1-868-706-0349</a> <br><i class="fa fa-facebook"></i>  | <i class="fa fa-twitter"></i> | <i class="fa fa-youtube"></i> | <i class="fa fa-linkedin"></i></h4>
+
+<div id="footer" class="front">
+  <h4> Contact Us</h4>
+  <a href="mailto:anomrac21@gmail.com" ><i class="fa fa-envelope"></i> anomrac21@gmail.com</a>
+  <a href="tel:1-868-706-0349"><i class="fa fa-phone"></i> 1-868-706-0349</a>
+  <div style="padding:5px 0;"><a href="#"><i class="fa fa-facebook"></i></a>  | <a href="#"><i class="fa fa-twitter"></i></a> | <a href="#"><i class="fa fa-youtube"></i></a> | <a href="#"><i class="fa fa-linkedin"></i></a></div>
 </div>
 
 
@@ -329,9 +323,6 @@ data-flickity='{ "selectedAttraction": 0.2,"friction": 0.9,"wrapAround": true, "
     }
   }
   AOS.init();
-  document.getElementById("paypalme").onclick = function () {
-        location.href = "https://docs.google.com/forms/d/e/1FAIpQLSegxg_UD7RMupo5YtJJpNOF-uxNHd6vPqnmHFMnXA2aetS0cA/viewform?usp=sf_link";
-    };
 function chbg(id,color) {
     document.getElementById(id).style.backgroundImage = "linear-gradient(rgba(255,0,0,0) 50%, rgba(0,0,225,1))";
 }  
@@ -344,7 +335,64 @@ function myFunction() {
   }
 }
 </script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'black',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-48U97762R8404045XMR7FJJI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-48U97762R8404045XMR7FJJI'); // Renders the PayPal button
+</script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'black',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-0T559554F2210944KMRZ6CTQ'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-0T559554F2210944KMRZ6CTQ'); // Renders the PayPal button
+</script> 
 
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'black',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-74220598K48928709MRZ5IHI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-74220598K48928709MRZ5IHI'); // Renders the PayPal button
+</script>
 </body>
 
 </html>

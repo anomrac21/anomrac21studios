@@ -52,7 +52,7 @@ body, h1, h2, h3, h4, h5, p, div{
 }
 .main-body{
     overflow:hidden;
-    background-image: linear-gradient(#fefefe, #efefef);
+    background-color:none;
     background-attachment:fixed;
     max-width:100%;
     margin:0 auto;
@@ -70,6 +70,8 @@ body, h1, h2, h3, h4, h5, p, div{
     font-weight: bolder;
     animation: pan-image 30s linear infinite;
     filter : "hue-rotate(20deg) brightness(0.8);";
+    position: relative;
+    z-index: 2;
 }
 #brand{
     font-family:Montserrat;
@@ -113,8 +115,10 @@ body, h1, h2, h3, h4, h5, p, div{
   visibility: hidden;
 }
 #quickmenutools{
-  background-image: linear-gradient(0deg,#000,#000,#000,#efefef44,#000,#000, #000);
+  background-image: linear-gradient(0deg,#000,#000,#000,#efefef,#000,#000, #000);
   color: #efefef;
+  position: relative;
+  z-index: 1;
 
 }
 #quickmenutools .afflinkqmt img{
@@ -142,17 +146,21 @@ body, h1, h2, h3, h4, h5, p, div{
   background-blend-mode: hard-light;
   overflow: hidden;
 }
+#games .flickity-prev-next-button,
 #quickmenutools .flickity-prev-next-button{
   top: 50%;
-  width: 24px;
+  width: 10px;
   height: 100%;
   border-radius: 0;
   display: none;
 
 }
-#quickmenutools .flickity-prev-next-button.next{ right: 0;}
-#quickmenutools .flickity-prev-next-button.previous{left: 0;}
-#quickmenutools .flickity-page-dots .dot{margin: 0 2px;}
+#quickmenutools .flickity-prev-next-button.next,
+#games .flickity-prev-next-button.next{ right: 0;}
+#quickmenutools .flickity-prev-next-button.previous,
+#games .flickity-prev-next-button.previous{left: 0;}
+#quickmenutools .flickity-page-dots .dot,
+#games .flickity-page-dots .dot{margin: 0 2px;}
 #quickmenutools a{
   color: #efefef;
 }
@@ -173,13 +181,15 @@ body, h1, h2, h3, h4, h5, p, div{
     background-blend-mode: hard-light;
 }
 #devdesinfo{
-  height: 90vh;
+  min-height: 90vh;
   padding: 10vh 5vw 0;
   background-position: -33vw;
   background-repeat: no-repeat;
   background-color: #000000;
   background-image: url(junk/hud.gif);
   background-blend-mode: hard-light;
+  position: relative;
+  z-index: 1;
 }
 
 #devdesinfo h1{
@@ -199,6 +209,10 @@ body, h1, h2, h3, h4, h5, p, div{
     float: left;
     margin: 0 0 0 20px;
 }
+#projects{
+  position: relative;
+    z-index: 1;
+}
 #projects ul{
   display: inline-block;
 }
@@ -209,36 +223,61 @@ body, h1, h2, h3, h4, h5, p, div{
 #projects ul li h4{
   display: inline-flex;
 }
-.brawlers{
+#projects .prjbtn{
+  background-position: bottom right;
+}
+#projects .prjbtn:hover{
+  padding: 1.125rem 3.6875rem 1.125rem 1.6875rem;
+  background-blend-mode: initial;
+  background-size: 18.5%;
+  background-repeat: no-repeat;
+}
+#projects .hog:hover{
+  background-image: url(junk/hoglogo.png);
+  background-position: 92% 50%;
+}
+#projects .lfdcya:hover{
+  background-image: url(junk/lfdcyalogo.png);
+  background-position: right;
+}
+#projects .flyspace{
+  display: flex;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-out;
+}
+#projects .flyspace:hover{
+  text-shadow: 0px 0px 1px #000;
+  text-decoration: none;
+}
+#projects .flyspace:hover .fly{
+  color:#ff0
+}
+#projects .flyspace:hover .space{
+  color:#00f
+}
+#brawlers{
   background-image: url(https://img.itch.zone/aW1hZ2UvNDIwMDAxLzExMDQyNDEwLmdpZg==/original/cYgw8y.gif);
   background-position: center;
 }
 
-.trialsofninja{
+#trialsofninja{
   background-image: url(https://img.itch.zone/aW1hZ2UvMjcwMzUwLzEzMDYwMDIuZ2lm/original/oj9GuN.gif);
   background-position: center;
 }
-.roboio{
+#roboio{
   background-image: url(https://img.itch.zone/aW1hZ2UvNDE0ODA5LzIwNjM0MDYuanBn/original/UCyPEh.jpg);
   background-position: center;
 }
-.tbhs{
+#tbhs{
   background-image: url(https://img.itch.zone/aW1nLzc5NDE4MDAuZ2lm/original/YQR7R4.gif);
   background-position: center;
 }
-.flyspace{
+#flyspace{
   color: #ffee00;
   background-image: url(https://img.itch.zone/aW1hZ2UvMzMzNDY2LzE2NzA5ODUuZ2lm/original/Cafbzu.gif);
   background-position: center;
 }
-.game-cell h2{
-  float: left;
-}
-.game-platform{
-  position: absolute;
-  bottom: 20px;
-  font-size: xx-large;
-}
+
 .design{
     background-image: url(junk/cautics.gif);
     background-blend-mode: soft-light;
@@ -261,12 +300,21 @@ body, h1, h2, h3, h4, h5, p, div{
     background-blend-mode: lighten;
     background-size: 100% auto;
     background-position: center;
-} 
+}
+.paypalbutton{
+  position: absolute;
+    bottom: -125px;
+    right: 0;
+    width: 100%;
+}
 .button{
     padding: 1.125rem 1.6875rem;
     margin: 0 1rem;
     color: #efefef;
     background-color: #000;
+    background-size: 0%;
+    background-position: right;
+    background-repeat: no-repeat;
     font-weight: 600;
     border-radius: 0.1875rem;
     transition-duration: 0.35s;
@@ -275,6 +323,8 @@ body, h1, h2, h3, h4, h5, p, div{
     border-top: 1px solid #efefef88;
     border-right: 1px solid #efefefff;
     border-bottom: 1px solid #efefefff;
+    display: block;
+    width: max-content;
 }
 .button:hover{
     padding: 1.125rem 2.6875rem;
@@ -286,18 +336,17 @@ body, h1, h2, h3, h4, h5, p, div{
   background-color: black;
   color: #efefef;
   padding: 40px 10px 10px;
+  position: relative;
+  z-index: 1;
 }
 
-#mobile{
-  background-image: linear-gradient(180deg, black, black,transparent);
-}
 #subscriptions ul{
   list-style: none;
   max-width: 100%;
 }
 #subscriptions .package{
   background-color: #57575744;
-  margin: 10px 10px 100px;
+  margin: 10px 10px 150px;
   position: relative;
   padding: 10px;
   max-width: 100%;
@@ -371,10 +420,13 @@ ul{
     margin: 0.5rem;
 }
 .emaillist{
-  height:600px;
-  width:100%;
-  padding-top:10vh ;
-  background-image: linear-gradient(180deg, black, black,transparent);
+  height: 700px;
+  width: 100%;
+  margin-top: 100px;
+  background-color: #000000;
+  position: fixed;
+  bottom: -70px;
+  z-index: 0;
 }
 .normal{
    padding:20px ;
@@ -438,11 +490,26 @@ ul{
 	padding:5px;
     
 }
-
+.addemmargin{
+  border-bottom: 1px solid rgba(239, 239, 239, 0.533);
+}
+.emaillistcontainer{
+  height: 100vh;
+}
 #footer {
-  font-family:monospace;
-	padding:1px;
-	color:#efefef;
+	padding:20px 20px 25px;
+	color:#101010;
+  display: grid;
+  background-color: #efefef;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  min-width: 100vw ;
+}
+#footer a,#footer h4{
+	color:#101010;
+  text-decoration: none;
+  padding:5px;
 }
 
 
@@ -458,24 +525,9 @@ ul{
     display: inline-block;
     width:100%;
     padding-top:50px;
+    position: relative;
+    z-index: 1;
 
-}
-.consult_us{
-    background-image: url(junk/business-meeting.jpg);
-    background-position: center;
-    background-color: #671e1e75;
-    background-size: 100% 100%;
-    background-blend-mode: difference;
-    padding-bottom: 40px;
-    background-attachment: fixed;
- 
-}
-
-#front {    
-    background-image: linear-gradient(#fefefe, #efefef);
-    min-height: 90vh;
-    overflow:hidden;
-	
 }
 
 #front h2 {
@@ -513,38 +565,8 @@ ul{
     z-index:1;
         
 }
-#footer{
-	background-color:#1010a0;
-	bottom:0px;
-    	text-align: center;
-        width: 100%;
-        transition: background-color 0.5s;
-        
-}
-#footer #dock li {
-    list-style-type: none;
-    display: inline-block;
-    position: relative;
-    padding: 5px;
-    transition: background-color 0.5s;
-}
-#dock a {
-	color:#efefef;
-	text-decoration: none;
-}
 
-#footer *,
-#navbanner *{
-	margin:0px;
-}
-#navbanner #dock li {
-    list-style-type: none;
-    display: inline-block;
-    position: relative;
-    padding: 8vh 2vw;
-    width: 14%;
-    transition: background-color 0.5s;
-}
+
 .gallery {
   padding:0;
   margin:0;
@@ -556,7 +578,7 @@ ul{
 .game-cell {
   margin-right: 10px;
   margin-bottom:10px;
-  background-color:rgba(225,225,225,0.7);
+  background-color:rgba(225,225,225,0.1);
   text-shadow: 2px 2px #000000;
   text-align: initial;
   width:96vw;
@@ -567,81 +589,31 @@ ul{
   background-size: auto 100%;
   border: 1px solid #efefef88;
   border-radius: 0.165rem;
+  text-decoration: none;
 
+}
+
+.game-cell .normal{
+  padding-bottom: 10px;
 }
 .game-cell h2{
-  font-size: 2rem;
+  font-size: 2.4rem; 
 }
-.game-status{
+.game-platforms{
   font-size: 12px;
   position: absolute;
-  padding: 0 1rem;
+  padding: 20px;
   bottom: 0;
   width: 100%;
-  background-color: #afaf1077;
   text-shadow: none;
 }
-
-.gallery-cell h4{
-  padding:20vh 0 4vh;
-}
-
-/* cell number */
-.gallery-cell:before {
-  display: block;
-  text-align: center;
-  line-height: 300px;
-  font-size: 80px;
-  color: #efefef;
-}
-
-#phonecontainer{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-#iphone{
-    border: 1px solid #8f8f8f;
-    border-radius: 30px;
-    overflow: hidden;
-    margin: 70px 10px;
-    display: inline-block;
-    width: 285px;
-    height: 545px;
-	
-}
-#iphone{
-     background-color: #ececec;
-}
-#iphone .app{
-    padding: 30px 6px 40px;
-    text-align:initial;
-}
-
-#iphone .app .app_body{
-    height: 465px;
-    background-color: #fefefe;
-    border: 1px solid #afafaf;
-    overflow: hidden;
-}
-
-#iphone .app .app_body ::-webkit-scrollbar{
-    display: none;
-}
-
-
-
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  color: #efefef;
-  padding-bottom: 20px;
+.game-platforms img{
+  height: 36px;
 }
 
 @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
   #devdesinfo{
-    height: 80vh;
+    min-height: 80vh;
     background-position: 5vw;
   }
 }
@@ -659,12 +631,12 @@ ul{
   }
   
   #devdesinfo{
-    height: 100vh;
+    min-height: 100vh;
     background-position: 20vw;
   }
 
   .game-cell{
-    background-size:  150% auto;
+    background-size:  180% auto;
  }
  @keyframes pan-image {
   0% {
@@ -704,12 +676,12 @@ ul{
 }
 @media (min-width:841px)  { 
   .game-cell{
-    background-size: 110% auto;
+    background-size: 135% auto;
  }
  #devdesinfo{
   padding: 10vh 5vw 0;
   background-position: 40vw;
-  height: 80vh;
+  min-height: 80vh;
  }
  #subscriptions ul{
   display: flex;
@@ -770,15 +742,11 @@ ul{
   #projects ul li{
     float: left;
   }
-  #footer li {
-    min-width: 10vw;
-  }
 
-  #footer li:hover h4,#footer li:hover h5{
-    display:block;
-  }
+
+ 
   .game-cell{
-    background-size: 100% auto;
+    background-size: 120% auto;
  }
  
 }
@@ -786,7 +754,7 @@ ul{
   #devdesinfo{
     padding: 10vw;
     background-position: 43vw;
-    height: 50vh;
+    min-height: 50vh;
    }
 }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
