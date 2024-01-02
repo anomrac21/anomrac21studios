@@ -130,7 +130,7 @@ body, h1, h2, h3, h4, h5, p, div{
 #quickmenutools .afflinkqmt{
   width: 25vw;
   min-width: 256px;
-  min-height: 26vh;
+  min-height: 12vh;
   padding: 15px;
   margin: 10px;
   box-shadow: 4px 4px #efefef44;
