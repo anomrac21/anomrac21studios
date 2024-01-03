@@ -497,7 +497,7 @@ ul{
   height: 100vh;
 }
 #footer {
-	padding:20px 20px 25px;
+	padding:20px 20px 100px;
 	color:#101010;
   display: grid;
   background-color: #efefef;
