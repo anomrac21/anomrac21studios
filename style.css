@@ -778,3 +778,41 @@ ul{
 }
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 }
+@supports (-webkit-touch-callout: none) {
+/* CSS specific to iOS devices */
+@keyframes pan-image {
+  0% {
+    background-position: 0% 0%;
+    background-size:500%
+  }
+  25% {
+    background-position: 0% 0%;
+    background-size:500%
+  }
+  25.0001% {
+    background-position: 100% 94%;
+    background-size:500%
+  }
+  50% {
+    background-position: 100% 94%;
+    background-size:500%
+  }
+  50.0001% {
+    background-position: 80% 15%;
+    background-size:500%
+  }
+  75% {
+    background-position: 80% 15%;
+    background-size:500%
+  }
+  75.0001% {
+    background-position: 35% 94%;
+    background-size:510%
+  }
+  100% {
+    background-position: 35% 94%;
+    background-size:510%
+  }
+  
+}
+}
