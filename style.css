@@ -115,10 +115,13 @@ body, h1, h2, h3, h4, h5, p, div{
   visibility: hidden;
 }
 #quickmenutools{
-  background-image: linear-gradient(0deg,#000,#000,#000,#efefef,#000,#000, #000);
-  color: #efefef;
-  position: relative;
-  z-index: 1;
+    background: #000;
+    border-top: 6px solid #eee;
+    border-bottom: 6px solid #eee;
+    color: #efefef;
+    position: relative;
+    z-index: 1;
+    margin: -1;
 
 }
 #quickmenutools .afflinkqmt img{
@@ -130,7 +133,7 @@ body, h1, h2, h3, h4, h5, p, div{
 #quickmenutools .afflinkqmt{
   width: 25vw;
   min-width: 256px;
-  min-height: 26vh;
+  min-height: 12vh;
   padding: 15px;
   margin: 10px;
   box-shadow: 4px 4px #efefef44;
